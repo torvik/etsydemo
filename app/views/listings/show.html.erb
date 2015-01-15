@@ -6,13 +6,14 @@
      <%= image_tag @listing.image.url %>
      </div>
   </div>
-  
+
   <div class="col-md-6">
     <h3> <%= @listing.name %></h3>
     <p> <%=  number_to_currency(@listing.price) %><p>
     <p>  <%= @listing.description %></p>
+    <h7><%= "Sold by #{@listing.user.name}" %> </h7>
   </div>
-</div>   
+</div>
 
 <%= link_to 'Edit', edit_listing_path(@listing) , class: "btn btn-link" %> |
 <%= link_to 'Back', listings_path, class: "btn btn-link" %>
