@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get 'pages/contact'
 
   root 'listings#index'
-  
+
+  get 'seller' => "listings#seller"
+
 end
