@@ -62,3 +62,19 @@ body {
   }
 
 }
+
+
+.footer {
+   background-image: url('https://giantswarm.io/static/img/skyline/city_skyline_buildings.svg');
+  position: relative;
+  display: block;
+  min-width: 1200px;
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden;
+  height: 360px;
+  left: 50%;
+  margin-left: -600px;
+  margin-bottom: -11px;
+
+}
