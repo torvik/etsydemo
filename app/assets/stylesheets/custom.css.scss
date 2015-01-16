@@ -4,7 +4,7 @@ body {
   background-color: #F5F5F1;
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
- 
+
 }
 
 .navbar-default {
@@ -37,7 +37,7 @@ body {
   h3 {font-size: 45px;}
   h5 {font-size: 25px;}
   p  { font-size: 18px;}
-  
+
 }
 
 .caption {
@@ -49,4 +49,16 @@ body {
     font-size: 15px;
     margin: 0px;
   }
+}
+
+.jumbotron {
+  background-image: url('jumbotron.jpg') ;
+  background-repeat: no-repeat;
+  background-position: 80% -180.5px;
+
+  h1, h2 {
+    font-family: guardian-egyptt, georgia, serif;
+    color: #FFF;
+  }
+
 }
