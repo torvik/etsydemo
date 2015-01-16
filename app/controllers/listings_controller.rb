@@ -12,13 +12,14 @@ class ListingsController < ApplicationController
   
   def index
     if params[:search]
-      @listings = Listing.search(params[:search]).order("created_at DESC")
+      @listings = Listing.search(params[:search]).order("created_at DESC")     
+      render :search
     else
        @listings = Listing.all.order("created_at DESC")
     end
   end
-  
 
+ 
   # GET /listings/1
   # GET /listings/1.json
   def show
