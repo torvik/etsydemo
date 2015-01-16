@@ -17,5 +17,11 @@ class Listing < ActiveRecord::Base
 
   belongs_to :user
   has_many :orders
+  
+
+  def self.search(query)
+     where("name like ?", "%#{query}%")
+  end
+   
 
 end

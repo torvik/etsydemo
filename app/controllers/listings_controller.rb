@@ -9,9 +9,15 @@ class ListingsController < ApplicationController
 
   # GET /listings
   # GET /listings.json
+  
   def index
-    @listings = Listing.all.order("created_at DESC")
+    if params[:search]
+      @listings = Listing.search(params[:search]).order("created_at DESC")
+    else
+       @listings = Listing.all.order("created_at DESC")
+    end
   end
+  
 
   # GET /listings/1
   # GET /listings/1.json
